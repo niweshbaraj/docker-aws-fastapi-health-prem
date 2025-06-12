@@ -25,14 +25,14 @@ This repository demonstrates the deployment of a Machine Learning model for pred
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/niweshbaraj/insurance-premium-prediction-fastapi.git
-cd insurance-premium-prediction-fastapi
+git clone [git@github.com:niweshbaraj/docker-aws-fastapi-health-prem.git](https://github.com/niweshbaraj/docker-aws-fastapi-health-prem.git)
+cd docker-aws-fastapi-health-prem
 ```
 
 ### 2. Build Docker Image
 
 ```bash
-docker build -t health-insurance-premium-api .
+docker build -t health-insurance-premium-api . 
 ```
 
 ### 3. Run Docker Container Locally
@@ -69,7 +69,6 @@ Visit: `http://[your-aws-backend-url](http://44.203.74.123:8000/docs)`
 1. Install dependencies:
 
     ```bash
-    pip install -r requirements.txt
     pip install streamlit requests (for running locally)
     ```
 
