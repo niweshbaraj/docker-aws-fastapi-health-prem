@@ -55,7 +55,7 @@ docker run -d -p 8000:8000 health-insurance-premium-api
 - Restart a new connection to EC2 instance.
 - Run the following commands:
   - docker pull niweshbaraj/health-insurance-premium-api:latest
-  - docker run -p 8000:8000 tweakster24/insurance-premium-api
+  - docker run -p 8000:8000 niweshbaraj/health-insurance-premium-api:latest
 - change security group settings to expose port 8000 for this EC2 instance.
 
 ### 5. Access FastAPI Docs
