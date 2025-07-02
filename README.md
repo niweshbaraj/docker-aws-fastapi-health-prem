@@ -16,7 +16,8 @@ This repository demonstrates the deployment of a Machine Learning model for pred
 ## URLs
 
 - **Streamlit Frontend**: [https://your-streamlit-app-url](https://health-insure-prem-api.streamlit.app)
-- **FastAPI Docs**: [https://your-aws-backend-url/docs](http://44.203.74.123:8000/docs)
+- **FastAPI Docs**: ~~[https://your-aws-backend-url/docs](http://44.203.74.123:8000/docs)~~ # Deleted EC2 instance
+- **FastAPI Docs (Updated link)**: [https://updated-render-link/docs](https://health-insurance-premium-api-latest.onrender.com/docs)  # Deployed on Render through docker registry
 
 ---
 
@@ -41,7 +42,7 @@ docker build -t health-insurance-premium-api .
 docker run -d -p 8000:8000 health-insurance-premium-api
 ```
 
-### 4. Deploy on AWS
+### 4. Steps to deploy on AWS
 
 - create an EC2 instance on AWS.
 - Connect to the EC2 instance (Terminal).
@@ -60,7 +61,7 @@ docker run -d -p 8000:8000 health-insurance-premium-api
 
 ### 5. Access FastAPI Docs
 
-Visit: `http://[your-aws-backend-url](http://44.203.74.123:8000/docs)`
+Visit: `http://[your-localhost-url](http://localhost:8000/docs)`
 
 ---
 
@@ -86,7 +87,7 @@ Visit: `http://[your-aws-backend-url](http://44.203.74.123:8000/docs)`
 
 ```bash
 curl -X 'POST' \
-  'http://44.203.74.123:8000/predict' \
+  'http://localhost:8000/predict' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
